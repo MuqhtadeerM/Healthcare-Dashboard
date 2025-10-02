@@ -1,6 +1,9 @@
-import React from "react";
 import Header from "./Header";
 import Sidebar from "./Sidebar";
+import Container from "./Container";
+import SecondContainer from "./SecondContainer";
+import RightContainer from "./RightContainer";
+import BottomRightContainer from "./BottomRightContainer";
 
 const Layout = () => {
   return (
@@ -19,16 +22,22 @@ const Layout = () => {
       {/* Header Area */}
       <Header />
 
-      {/* Main Content Container (Sidebar and Content Side by Side) */}
+      {/* Main Content Container (Sidebar, Container, Second Container, Right Container, Bottom Right Container, and Additional Content) */}
       <div className="flex flex-1 mt-4">
         {/* Sidebar Area */}
         <Sidebar />
 
-        {/* Content Area (Placeholder for PatientProfile, BloodPressureGraph, etc.) */}
-        <div className="flex-1 h-full bg-[#F6F7F8] p-6 ml-2">
-          {/* Placeholder for patient data and graph */}
-          <p className="text-gray-600">Content Placeholder</p>
-        </div>
+        {/* Container Area */}
+        <Container />
+
+        {/* Second Container Area */}
+        <SecondContainer />
+
+        {/* Right Container Area */}
+        <RightContainer />
+
+        {/* Bottom Right Container Area */}
+        <BottomRightContainer />
       </div>
     </div>
   );
